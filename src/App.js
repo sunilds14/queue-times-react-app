@@ -69,6 +69,7 @@ const App = () => {
           ))}
         </div>
       )}
+      <div>Powered by <a href="https://queue-times.com/">Queue-Times.com</a></div>
     </div>
   );
 };
