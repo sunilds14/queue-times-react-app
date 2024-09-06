@@ -11,10 +11,10 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       const url =
-      process.env.NODE_ENV === "development"
-        ? "/queue-times-react-app/data/queue_times.json" // Local development URL
-        : "https://cors-anywhere.herokuapp.com/https://queue-times.com/parks/4/queue_times.json"; // Production URL
-  
+        process.env.NODE_ENV === "development"
+          ? "/queue-times-react-app/data/queue_times.json" // Local development URL
+          : "https://cors-anywhere.herokuapp.com/https://queue-times.com/parks/4/queue_times.json"; // Production URL
+
       try {
         const response = await fetch(url);
         if (!response.ok) throw new Error('Network response was not ok');
@@ -41,7 +41,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Ride Queue Times x</h1>
+      <h1>DLP Ride Queue Times 🎡</h1>
       {/* Show loading spinner if data is being fetched */}
       {loading ? (
         <p>Loading...</p>
@@ -51,10 +51,17 @@ const App = () => {
           {rideData.map((land, index) => (
             <div key={index}>
               <h2>{land.name}</h2>
-              <ul> 
+              <ul>
                 {land.rides.map((ride, i) => (
                   <li key={i} className={getClassName(ride.wait_time)}>
-                    {ride.name}: {ride.wait_time ? `${ride.wait_time} minutes` : 'No wait time available'}
+                    {/* Show ride name with a closed icon if the ride is closed */}
+                    {ride.name}: {ride.is_open ? (
+                      ride.wait_time ? `${ride.wait_time} minutes` : 'No wait time available'
+                    ) : (
+                      <span className="closed">
+                        🚫 Closed
+                      </span>
+                    )}
                   </li>
                 ))}
               </ul>

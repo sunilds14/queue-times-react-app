@@ -1,19 +1,19 @@
 .no-data {
-    background-color: gray;
-    color: white;
+    background-color: lightgray;
+    color: black;
   }
   
   .short-wait {
-    background-color: green;
-    color: white;
+    background-color: lightseagreen;
+    color: black;
   }
   
   .medium-wait {
-    background-color: yellow;
+    background-color: lightsalmon;
     color: black;
   }
   
   .long-wait {
-    background-color: red;
-    color: white;
+    background-color: lightcoral;
+    color: black;
   }
