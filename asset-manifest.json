@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/queue-times-react-app/static/css/main.e63f1291.css",
-    "main.js": "/queue-times-react-app/static/js/main.44d52359.js",
+    "main.css": "/queue-times-react-app/static/css/main.38b648ea.css",
+    "main.js": "/queue-times-react-app/static/js/main.d83e7cf5.js",
     "static/js/453.2e3200ed.chunk.js": "/queue-times-react-app/static/js/453.2e3200ed.chunk.js",
     "index.html": "/queue-times-react-app/index.html",
-    "main.e63f1291.css.map": "/queue-times-react-app/static/css/main.e63f1291.css.map",
-    "main.44d52359.js.map": "/queue-times-react-app/static/js/main.44d52359.js.map",
+    "main.38b648ea.css.map": "/queue-times-react-app/static/css/main.38b648ea.css.map",
+    "main.d83e7cf5.js.map": "/queue-times-react-app/static/js/main.d83e7cf5.js.map",
     "453.2e3200ed.chunk.js.map": "/queue-times-react-app/static/js/453.2e3200ed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e63f1291.css",
-    "static/js/main.44d52359.js"
+    "static/css/main.38b648ea.css",
+    "static/js/main.d83e7cf5.js"
   ]
 }
