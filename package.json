@@ -17,6 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "https://queue-times.com",
   "eslintConfig": {
     "extends": [
       "react-app",
