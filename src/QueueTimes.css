@@ -1,0 +1,19 @@
+.no-data {
+    background-color: gray;
+    color: white;
+  }
+  
+  .short-wait {
+    background-color: green;
+    color: white;
+  }
+  
+  .medium-wait {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .long-wait {
+    background-color: red;
+    color: white;
+  }

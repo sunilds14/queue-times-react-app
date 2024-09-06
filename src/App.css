@@ -25,6 +25,3 @@ li {
   border-radius: 5px;
 }
 
-li:nth-child(even) {
-  background-color: #e0e0e0;
-}
